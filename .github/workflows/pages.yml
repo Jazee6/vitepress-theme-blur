@@ -51,7 +51,7 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     environment: pages
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/master'
 
     steps:
       - name: Download artifact
