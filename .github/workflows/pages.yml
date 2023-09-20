@@ -65,5 +65,4 @@ jobs:
         with:
           deploy_key: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
-          publish_branch: main
           cname: blog.jaze.top
