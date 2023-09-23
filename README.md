@@ -3,13 +3,16 @@
 一个基于VitePress的博客主题
 
 中文文档 | [English](./README.en.md)
+
 ## 预览
+
 ![预览图](/public/preview.png)
 
 ## 快速开始
+
 ```
-#克隆项目
-git clone https://github.com/Jazee6/vitepress-theme-blur
+#下载模板
+npx degit https://github.com/Jazee6/vitepress-theme-blur
 
 #进入项目
 cd vitepress-theme-blur
@@ -31,6 +34,7 @@ pnpm run build
 ```
 
 ## 路线
+
 - [x] 文章列表/详情
 - [x] 响应式设计
 - [ ] 分页
@@ -48,4 +52,5 @@ pnpm run build
 - [ ] ...
 
 ## 感谢
+
 - [vuejs/blog](https://github.com/vuejs/blog)
