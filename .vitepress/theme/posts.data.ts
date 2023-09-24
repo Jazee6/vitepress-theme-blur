@@ -23,9 +23,11 @@ export default createContentLoader('posts/*.md', {
                 url,
                 excerpt,
                 date: formatDate(frontmatter.date),
-                img: frontmatter.img
+                img: frontmatter.img,
+                hide: frontmatter.hide
             }))
             .sort((a, b) => b.date.time - a.date.time)
+            .filter((post) => !post.hide)
     }
 })
 

@@ -41,7 +41,14 @@ export default defineConfig({
             // Recommended svg site: https://xicons.org/
             // 在这里添加更多的社交链接。设置 viewBox="0 0 512 512"
             // 推荐的svg网站：https://xicons.org/
-        ]
+        ],
+        footer: {
+            copyright: "© 2023 Jazee",
+            message: "Built with ❤️ by Jazee",
+            // @ts-ignore
+            // For China Mainland ICP License only (https://beian.miit.gov.cn/)
+            beiAn: "",
+        },
     },
     head: [
         ["link", {rel: "icon", type: "image/x-icon", href: "/favicon.png"}],
