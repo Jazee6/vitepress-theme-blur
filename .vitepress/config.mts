@@ -47,7 +47,7 @@ export default defineConfig({
             message: "Built with ❤️ by Jazee",
             // @ts-ignore
             // For China Mainland ICP License only (https://beian.miit.gov.cn/)
-            beiAn: "",
+            beiAn: "湘ICP备2023026554号-1",
         },
     },
     head: [

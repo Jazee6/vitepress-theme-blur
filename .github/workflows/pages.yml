@@ -67,4 +67,4 @@ jobs:
           external_repository: Jazee6/jazee6.github.io
           publish_dir: ./dist
           publish_branch: main
-          cname: blog.jaze.top
+          cname: jaze.top

@@ -18,7 +18,7 @@ const {theme} = useData()
       <div class="flex">
         <div>
           Theme: <a class="hover:text-black text-gray-700" href="https://github.com/Jazee6/vitepress-theme-blur"
-                    target="_blank">Blur</a>
+                    target="_blank">Blur </a>V{{ v }}
         </div>
         <a class="ml-auto hover:text-black" href="https://beian.miit.gov.cn/"
            target="_blank">{{ theme.footer.beiAn }}</a>
