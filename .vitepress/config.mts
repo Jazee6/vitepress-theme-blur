@@ -5,7 +5,7 @@ import {defineConfig} from 'vitepress'
 export default defineConfig({
     title: "Hi! Jazee",
     description: "A Blog Powered by VitePress Theme Blur",
-    cleanUrls: true,
+    // cleanUrls: true,
     themeConfig: {
         siteTitle: "Hi! Jazee",
         // @ts-ignore
