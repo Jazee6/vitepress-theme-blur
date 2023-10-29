@@ -69,12 +69,12 @@ jobs:
           publish_branch: main
           cname: jaze.top
 
-      - name: upload files to OSS
-        uses: fangbinwei/aliyun-oss-website-action@v1.4.0
-        with:
-          accessKeyId: ${{ secrets.ACCESS_KEY_ID }}
-          accessKeySecret: ${{ secrets.ACCESS_KEY_SECRET }}
-          bucket: jaze-web
-          endpoint: https://oss-cn-shanghai.aliyuncs.com
-          folder: dist
-          skipSetting: true
+#      - name: upload files to OSS
+#        uses: fangbinwei/aliyun-oss-website-action@v1.4.0
+#        with:
+#          accessKeyId: ${{ secrets.ACCESS_KEY_ID }}
+#          accessKeySecret: ${{ secrets.ACCESS_KEY_SECRET }}
+#          bucket: jaze-web
+#          endpoint: https://oss-cn-shanghai.aliyuncs.com
+#          folder: dist
+#          skipSetting: true
