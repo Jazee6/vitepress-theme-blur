@@ -49,6 +49,7 @@ pnpm run build
 - [ ] SEO
 - [ ] page页面
 - [ ] 友链
+- [ ] 统计
 - [ ] ...
 
 ## 感谢

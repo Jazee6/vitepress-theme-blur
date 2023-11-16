@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+[class*=language-] > span.lang {
+    position: absolute;
+    right: 0.5rem;
+    font-size: 0.75rem;
+    color: #999;
+}
+
+[class*=language-] > button.copy {
+    display: none;
+}

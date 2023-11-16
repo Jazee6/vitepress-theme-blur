@@ -6,6 +6,7 @@ import PostList from "./components/PostList.vue";
 import Footer from "./components/Footer.vue";
 import NotFound from "./components/NotFound.vue";
 import Article from "./components/Article.vue";
+import Links from "./components/Links.vue";
 
 // https://vitepress.dev/reference/runtime-api#usedata
 let vitePressData = useData();
@@ -17,7 +18,8 @@ const {site, frontmatter, page} = vitePressData
   <div class="flex flex-col min-h-screen">
     <Hero v-if="frontmatter.home"/>
     <PostList v-if="frontmatter.home"/>
-    <NotFound v-else-if="page.isNotFound"/>
+    <Links v-if="frontmatter.links"/>
+    <NotFound v-if="page.isNotFound"/>
     <Article v-else/>
     <Footer/>
   </div>
