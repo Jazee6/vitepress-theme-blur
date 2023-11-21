@@ -5,7 +5,7 @@ const {theme} = useData()
 </script>
 
 <template>
-  <div class="container mx-auto flex flex-col py-8 md:py-16 pl-4 mt-16">
+  <div class="container mx-auto flex flex-col md:pb-16 md:pt-8 pb-6 pl-8">
     <img :src="theme.avatar.src" alt="avatar" class="w-32 h-32 rounded-full shadow-2xl mb-4"/>
     <img v-if="theme.avatar.shadow" :src="theme.avatar.src" alt="avatar"
          class="w-32 h-32 rounded-full blur-2xl absolute -z-10"/>

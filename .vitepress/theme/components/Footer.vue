@@ -9,7 +9,7 @@ const {theme} = useData()
 
 <template>
   <footer class="h-24 mt-auto shrink-0 bg-gray-100 rounded-t">
-    <div class="container mx-auto px-4 py-2 flex flex-col h-full text-gray-500 text-sm">
+    <div class="max-w-screen-xl mx-auto px-4 py-2 flex flex-col h-full text-gray-500 text-sm">
       <div class="flex-1 flex justify-center items-center">
         <div>{{ theme.footer.message }}</div>
         <div v-if="theme.footer.message" class="m-2">|</div>

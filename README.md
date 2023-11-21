@@ -6,7 +6,7 @@
 
 ## 预览
 
-![预览图](/public/preview.png)
+![预览图](/public/preview.webp)
 
 ## 快速开始
 
@@ -49,7 +49,7 @@ pnpm run build
 - [ ] SEO
 - [ ] page页面
 - [ ] 友链
-- [ ] 统计
+- [ ] 锚点
 - [ ] ...
 
 ## 感谢

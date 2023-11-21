@@ -14,8 +14,8 @@ const {site, frontmatter, page} = vitePressData
 </script>
 
 <template>
-  <NavBar/>
   <div class="flex flex-col min-h-screen">
+    <NavBar/>
     <Hero v-if="frontmatter.home"/>
     <PostList v-if="frontmatter.home"/>
     <Links v-if="frontmatter.links"/>

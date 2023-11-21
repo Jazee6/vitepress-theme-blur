@@ -19,6 +19,7 @@ const {site, theme} = useData()
       </div>
     </div>
   </div>
+  <div class="h-24"></div>
 </template>
 
 <style scoped>

@@ -2,9 +2,8 @@
 title: 主题配置
 date: 2023-11-09
 ---
-
 本文介绍Blur主题的配置，包含部署方法。
-
+[[toc]]
 ---
 
 # 主题配置
@@ -31,12 +30,57 @@ date: 2023-01-01
 ...
 ---
 这里是简介，将会显示在主页上，可以留空。最多显示 5 行。
+[[toc]] # 生成文章目录（可选）
 ---
 ```
 
-## 分析
+## 写作
 
-如果你不使用vercel提供的分析功能，请删除@vercel/analytics包。
+### 自定义容器
+
+```md
+::: info
+This is an info box.
+:::
+
+::: tip
+This is a tip.
+:::
+
+::: warning
+This is a warning.
+:::
+
+::: danger
+This is a dangerous warning.
+:::
+
+::: details
+This is a details block.
+:::
+```
+
+**输出**
+
+::: info
+This is an info box.
+:::
+
+::: tip
+This is a tip.
+:::
+
+::: warning
+This is a warning.
+:::
+
+::: danger
+This is a dangerous warning.
+:::
+
+::: details
+This is a details block.
+:::
 
 ## 部署
 
@@ -136,3 +180,7 @@ jobs:
           folder: dist
           skipSetting: true
 ```
+
+## 分析
+
+如果你不使用vercel提供的分析功能，请删除@vercel/analytics包。

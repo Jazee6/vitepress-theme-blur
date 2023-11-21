@@ -59,8 +59,12 @@ export default defineConfig({
         ["meta", {name: "og:description", content: "A Blog Powered by VitePress Theme Blur"}],
         ["meta", {name: "og:type", content: "website"}],
         ["meta", {name: "og:url", content: "https://jaze.top/"}],
-        ["meta", {name: "og:image", content: "https://jaze.top/avatar.png"}],
+        ["meta", {name: "og:image", content: "https://jaze.top/preview.webp"}],
+        ["meta", {name: "twitter:image", content: "https://jaze.top/preview.webp"}],
         ["meta", {name: "twitter:card", content: "summary"}],
+        ["meta", {name: "twitter:title", content: "Hi! Jazee"}],
+        ["meta", {name: "twitter:description", content: "A Blog Powered by VitePress Theme Blur"}],
+        ["meta", {name: "twitter:url", content: "https://jaze.top/"}],
     ],
     markdown: {
         theme: "github-dark",
