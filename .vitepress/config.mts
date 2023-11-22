@@ -67,6 +67,14 @@ export default defineConfig({
         ["meta", {name: "twitter:url", content: "https://jaze.top/"}],
     ],
     markdown: {
-        theme: "github-dark",
+        theme: "github-light",
+        math: false,
+        container: {
+            tipLabel: '提示',
+            warningLabel: '警告',
+            dangerLabel: '危险',
+            infoLabel: '信息',
+            detailsLabel: '详细信息'
+        }
     }
 })

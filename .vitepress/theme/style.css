@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    scroll-behavior: smooth;
+}
+
 [class*=language-] > span.lang {
     position: absolute;
     right: 0.5rem;
@@ -10,7 +14,7 @@
 }
 
 [class*=language-] > button.copy {
-    display: none;
+    @apply hidden
 }
 
 nav.table-of-contents {
@@ -52,4 +56,31 @@ nav.table-of-contents {
 
 .custom-block.details > summary {
     @apply font-bold p-2 cursor-pointer
+}
+
+.custom-block.details:hover {
+    @apply bg-gray-200 transition-all
+}
+
+.prose :where(pre) {
+    @apply bg-gray-100
+}
+
+[class*=language-] code .highlighted {
+    margin: 0 -1rem;
+    padding: 0 1rem;
+    width: calc(100% + 2rem);
+    @apply bg-gray-200 inline-block
+}
+
+:not(pre) > code {
+    @apply bg-gray-100 p-1 rounded
+}
+
+:not(pre) > code::before, ::after {
+    @apply hidden
+}
+
+.line-numbers-wrapper {
+    @apply absolute top-0 left-0 w-6 bg-gray-100 rounded-tr rounded-br
 }

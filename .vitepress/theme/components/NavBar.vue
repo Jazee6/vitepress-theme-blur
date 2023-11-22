@@ -28,5 +28,6 @@ const {site, theme} = useData()
   backdrop-filter: saturate(180%) blur(20px);
   border-radius: 0 0 8px 8px;
   z-index: 1;
+  @apply shadow
 }
 </style>

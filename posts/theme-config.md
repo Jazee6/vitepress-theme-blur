@@ -2,6 +2,7 @@
 title: 主题配置
 date: 2023-11-09
 ---
+
 本文介绍Blur主题的配置，包含部署方法。
 [[toc]]
 ---
@@ -23,7 +24,7 @@ hide: true # 隐藏文章（可选）
 
 ## 简介
 
-```yaml
+```yaml{6-7}
 ---
 title: Hello World
 date: 2023-01-01
@@ -39,7 +40,7 @@ date: 2023-01-01
 ### 自定义容器
 
 ```md
-::: info
+::: info 自定义标题
 This is an info box.
 :::
 
@@ -62,7 +63,7 @@ This is a details block.
 
 **输出**
 
-::: info
+::: info 自定义标题
 This is an info box.
 :::
 
@@ -81,6 +82,36 @@ This is a dangerous warning.
 ::: details
 This is a details block.
 :::
+
+### 代码块
+
+````js
+```{3-5} # 从第3行到第5行高亮
+export default {
+  data () {
+    return {
+      msg: 'Highlighted!'
+    }
+  }
+}
+```
+````
+
+**输出**
+
+```js{3-5}
+export default {
+  data () {
+    return {
+      msg: 'Highlighted!' // [!code focus]
+    }
+  }
+}
+```
+
+或使用 `// [!code hl]` 高亮。
+
+待适配：`// [!code  focus]` `// [!code --]` `// [!code ++]` `// [!code warning]` `// [!code warning]` `::: code-group`
 
 ## 部署
 
