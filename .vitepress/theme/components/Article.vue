@@ -1,18 +1,27 @@
 <script setup lang="ts">
 import {useData} from 'vitepress'
+import {onMounted} from "vue";
 
 const {frontmatter} = useData()
 
-window.onscroll = function () {
-  if (document.documentElement.scrollTop > 128) {
-    document.getElementById("back-to-top").style.visibility = "visible";
-  } else {
-    document.getElementById("back-to-top").style.visibility = "hidden";
+onMounted(() => {
+  window.onscroll = () => {
+    const backToTopButton = document.getElementById("back-to-top-button");
+    if (backToTopButton) {
+      if (document.documentElement.scrollTop > 100) {
+        backToTopButton.style.visibility = "visible";
+      } else {
+        backToTopButton.style.visibility = "hidden";
+      }
+    }
   }
-}
+})
 
 const handleToTop = () => {
-  document.documentElement.scrollTop = 0;
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  })
 }
 </script>
 
@@ -35,6 +44,6 @@ const handleToTop = () => {
 #back-to-top-button {
   background: rgba(245, 245, 247, 0.72) url("/back-to-top.svg");
   backdrop-filter: saturate(180%) blur(20px);
-  @apply rounded-full shadow ml-auto w-16 h-16 cursor-pointer hover:shadow-xl transition-all
+  @apply rounded-full shadow ml-auto w-16 h-16 cursor-pointer hover:shadow-xl transition-all invisible
 }
 </style>
