@@ -9,6 +9,15 @@
           "value": "max-age=31536000, immutable"
         }
       ]
+    },
+    {
+      "source": "/(.png|.jpg|.jpeg|.webp|.svg|.gif)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "max-age=2592000"
+        }
+      ]
     }
   ]
 }

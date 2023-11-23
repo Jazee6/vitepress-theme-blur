@@ -1,14 +1,17 @@
 ---
 links:
-  - title: "GitHub"
-    url: "https://github.com"
-    description: "GitHub is a development platform inspired by the way you work. From open source to business, you can host and review code, manage projects, and build software alongside 50 million developers."
-  - title: "Google"
-    url: "https://google.com"
-    description: "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find exactly what you're looking for."
-  - title: "Bing"
-    url: "https://bing.com"
-    description: "Bing helps you turn information into action, making it faster and easier to go from searching to doing."
+  - title: "z3475's Blog"
+    url: "https://z3475.work/"
+    description: "学习，思考，输出"
+    avatar: "https://z3475.work/rebirth/images/avatar.png"
+  - title: "NiceBowl的博客"
+    url: "https://nicebowl.fun/"
+    description: "一个不稳定的精神世界。偶尔写些随想，杂谈，学习笔记。"
+    avatar: "https://nicebowl.fun/favicon.ico"
+  - title: "I Am I"
+    url: "https://5ime.cn/"
+    description: "永远相信美好的事情即将发生"
+    avatar: "https://cdn.jsdelivr.net/gh/5ime/img/avatar.jpg"
 ---
 ## 本站信息
 ```yaml
