@@ -9,7 +9,7 @@ const {frontmatter} = useData()
     <ul class="md:columns-3 sm:columns-2">
       <li v-for="i in frontmatter.links" :key="i.url" id="card-link">
         <a :href="i.url" target="_blank" class="flex p-2 h-full">
-          <img v-if="i.avatar" :src="i.avatar" alt="link image" class="h-20 w-20 rounded-full">
+          <img v-if="i.avatar" :src="i.avatar" alt="link image" class="h-20 w-20 rounded-full shrink-0">
           <div class="flex flex-col ml-4">
             <div class="text-lg font-bold mt-1">{{ i.title }}</div>
             <div class="text-sm font-normal line-clamp-2">{{ i.description }}</div>

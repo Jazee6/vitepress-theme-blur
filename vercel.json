@@ -11,7 +11,7 @@
       ]
     },
     {
-      "source": "/(.png|.jpg|.jpeg|.webp|.svg|.gif)",
+      "source": "/avatar.png",
       "headers": [
         {
           "key": "Cache-Control",

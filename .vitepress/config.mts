@@ -1,4 +1,6 @@
 import {defineConfig} from 'vitepress'
+// @ts-ignore
+// import lazy_loading from 'markdown-it-image-lazy-loading'
 
 // https://github.com/Jazee6/vitepress-theme-blur
 
@@ -65,6 +67,7 @@ export default defineConfig({
         ["meta", {name: "twitter:title", content: "Hi! Jazee"}],
         ["meta", {name: "twitter:description", content: "A Blog Powered by VitePress Theme Blur"}],
         ["meta", {name: "twitter:url", content: "https://jaze.top/"}],
+        ["meta", {name: "baidu-site-verification", content: "codeva-lDGAXYOQrd"}],
     ],
     markdown: {
         theme: "github-light",
@@ -75,6 +78,11 @@ export default defineConfig({
             dangerLabel: '危险',
             infoLabel: '信息',
             detailsLabel: '详细信息'
-        }
+        },
+        // config: (md) => {
+        //     md.use(lazy_loading, {
+        //         decoding: true,
+        //     })
+        // }
     }
 })

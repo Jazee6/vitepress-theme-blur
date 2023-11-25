@@ -26,7 +26,9 @@ const handleToTop = () => {
 </script>
 
 <template>
-  <div class="container mx-auto max-w-screen-lg px-4 prose prose-img:rounded dark:prose-invert">
+  <div
+      class="container mx-auto max-w-screen-lg px-4 prose prose-img:rounded md:prose-img:max-w-3xl prose-img:max-h-screen
+      prose-pre:text-neutral-900 dark:prose-invert">
     <Content/>
   </div>
   <div id="back-to-top" v-if="!frontmatter.home">
