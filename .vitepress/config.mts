@@ -81,7 +81,7 @@ export default defineConfigWithTheme<ThemeConfig>({
             infoLabel: '信息',
             detailsLabel: '详细信息'
         },
-        config: (md) => { // TODO Test
+        config: (md) => {
             const originalImageRender = md.renderer.rules.image!;
 
             md.renderer.rules.image = (tokens, index, options, env, self): string => {

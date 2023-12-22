@@ -1,7 +1,7 @@
 <script setup>
 import {data} from '../posts.data'
 import PostCard from "./PostCard.vue";
-import {onMounted, reactive, ref, watch} from "vue";
+import {onMounted, ref, watch} from "vue";
 import {breakpointsTailwind, useBreakpoints} from "@vueuse/core";
 
 const bp = useBreakpoints(breakpointsTailwind)
