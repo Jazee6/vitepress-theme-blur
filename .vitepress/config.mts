@@ -1,10 +1,8 @@
-import {defineConfig} from 'vitepress'
-// @ts-ignore
-// import lazy_loading from 'markdown-it-image-lazy-loading'
+import {defineConfigWithTheme} from 'vitepress'
 
 // https://github.com/Jazee6/vitepress-theme-blur
 
-export default defineConfig({
+export default defineConfigWithTheme<ThemeConfig>({
     title: "Hi! Jazee",
     description: "A Blog Powered by VitePress Theme Blur",
     lang: "zh-CN",
@@ -21,6 +19,7 @@ export default defineConfig({
             {text: "Home", link: "/"},
             {text: "Links", link: "/pages/links"},
             {text: "About", link: "/pages/about"},
+            {text: "AI", link: "https://ai.jaze.top/"},
         ],
         socialLinks: [
             {
@@ -52,6 +51,9 @@ export default defineConfig({
             beiAn: "湘ICP备2023026554号-1",
         },
     },
+    sitemap: {
+        hostname: "https://jaze.top",
+    },
     head: [
         ["link", {rel: "icon", type: "image/x-icon", href: "/favicon.png"}],
         ["meta", {name: "author", content: "Jazee"}],
@@ -79,10 +81,40 @@ export default defineConfig({
             infoLabel: '信息',
             detailsLabel: '详细信息'
         },
-        // config: (md) => {
-        //     md.use(lazy_loading, {
-        //         decoding: true,
-        //     })
-        // }
+        config: (md) => { // TODO Test
+            const originalImageRender = md.renderer.rules.image!;
+
+            md.renderer.rules.image = (tokens, index, options, env, self): string => {
+                tokens[index].attrSet("loading", "lazy");
+
+                return originalImageRender(tokens, index, options, env, self);
+            };
+        }
     }
 })
+
+interface ThemeConfig {
+    siteTitle: string
+    avatar: {
+        src: string
+        shadow: boolean
+    }
+    line1: string
+    line2: string
+    nav: {
+        text: string
+        link: string
+    }[]
+    socialLinks: {
+        icon: {
+            svg: string
+        }
+        link: string
+        ariaLabel?: string
+    }[]
+    footer: {
+        copyright: string
+        message: string
+        beiAn: string
+    }
+}
