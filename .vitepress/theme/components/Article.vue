@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import {useData} from 'vitepress'
 import {onMounted} from "vue";
+import {formDate} from "../utils/utils.js";
 
-const {frontmatter} = useData()
+const {frontmatter, page} = useData()
 
 onMounted(() => {
   window.onscroll = () => {
@@ -30,6 +31,10 @@ const handleToTop = () => {
       class="container mx-auto max-w-screen-lg px-4 prose prose-img:rounded md:prose-img:max-w-3xl prose-img:max-h-screen
       prose-pre:text-neutral-900 dark:prose-invert">
     <Content/>
+    <p v-if="!frontmatter.home">
+      上次更新:
+      {{ formDate(page.lastUpdated) }}
+    </p>
   </div>
   <div id="back-to-top" v-if="!frontmatter.home">
     <div class="w-full flex">

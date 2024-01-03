@@ -7,6 +7,7 @@ export default defineConfigWithTheme<ThemeConfig>({
     description: "A Blog Powered by VitePress Theme Blur",
     lang: "zh-CN",
     cleanUrls: true,
+    lastUpdated: true,
     themeConfig: {
         siteTitle: "Hi! Jazee",
         avatar: {

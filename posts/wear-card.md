@@ -1,6 +1,7 @@
 ---
 title: 腕上饭卡—手表模拟全加密卡
 date: 2021-02-12
+img: https://blog.cdn.openhole.top/2023/11/4e6e2d22b8dc64ad333724ae7c413c7f.webp
 ---
 
 适用于能开通**空白门卡**的，带**NFC**功能的手表/手环模拟门卡/饭卡
