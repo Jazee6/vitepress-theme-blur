@@ -45,7 +45,7 @@ export default defineConfigWithTheme<ThemeConfig>({
             // 推荐的svg网站：https://xicons.org/
         ],
         footer: {
-            copyright: "© 2023 Jazee",
+            copyright: "© 2023-2024 Jazee",
             message: "Built with ❤️ by Jazee",
             // For China Mainland ICP License only (https://beian.miit.gov.cn/)
             // @ts-ignore

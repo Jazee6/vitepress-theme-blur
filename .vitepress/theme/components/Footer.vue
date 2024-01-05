@@ -8,7 +8,7 @@ const {theme} = useData()
 </script>
 
 <template>
-  <footer class="h-24 mt-auto shrink-0 bg-gray-100 rounded-t">
+  <footer class="h-24 mt-auto shrink-0 bg-neutral-100 rounded-t">
     <div class="max-w-screen-xl mx-auto px-4 py-2 flex flex-col h-full text-gray-500 text-sm">
       <div class="flex-1 flex justify-center items-center">
         <div>{{ theme.footer.message }}</div>

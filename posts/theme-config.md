@@ -8,8 +8,6 @@ date: 2023-11-09
 
 ---
 
-# 主题配置
-
 ## Front Matter
 
 front matter 必须是 markdown 文件中的第一部分，且必须是有效的 YAML。例如：

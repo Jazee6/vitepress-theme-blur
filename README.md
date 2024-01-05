@@ -6,7 +6,7 @@
 
 ## 预览
 
-![预览图](/public/preview.webp)
+[Hi! Jazee](https://jaze.top)
 
 ## 快速开始
 

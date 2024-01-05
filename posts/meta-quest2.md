@@ -8,8 +8,6 @@ img: https://blog.cdn.openhole.top/2024/01/662f4075c7e940799a48a97e284a9307.webp
 
 ---
 
-# Meta Quest 2 VR 简评+指南
-
 ## 故事
 
 为什么买Quest 2？去年暑假，我的选择有

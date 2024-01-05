@@ -8,9 +8,8 @@ defineProps<{
 
 <template>
   <a
-      class="flex flex-col shadow hover:shadow-2xl transition-all rounded mb-4 cursor-pointer break-inside-avoid"
+      class="flex flex-col shadow hover:shadow-2xl transition-all rounded mb-4"
       :href="post.url">
-    <img v-if="post.img" :src="post.img" alt="post image" class="rounded-t"/>
     <div class="p-4 flex flex-col space-y-2">
       <div class="text-xl font-bold ">{{ post.title }}</div>
       <div class="text-gray-500 line-clamp-5" v-if="post.excerpt" v-html="post.excerpt"></div>

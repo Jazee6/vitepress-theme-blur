@@ -9,5 +9,3 @@ hide: true
 [[toc]]
 
 ---
-
-# Title
