@@ -1,4 +1,5 @@
 ---
+page: true
 links:
   - title: "z3475's Blog"
     url: "https://z3475.work/"
@@ -13,7 +14,9 @@ links:
     description: "永远相信美好的事情即将发生"
     avatar: "https://cdn.jsdelivr.net/gh/5ime/img/avatar.jpg"
 ---
+
 ## 本站信息
+
 ```yaml
 title: "Hi! Jazee"
 url: "https://jaze.top"

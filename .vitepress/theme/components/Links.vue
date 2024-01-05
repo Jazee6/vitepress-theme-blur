@@ -5,7 +5,7 @@ const {frontmatter} = useData()
 </script>
 
 <template>
-  <div class="container mx-auto max-w-screen-lg px-4 mt-24">
+  <div class="container mx-auto max-w-screen-lg px-4">
     <ul class="md:columns-3 sm:columns-2">
       <li v-for="i in frontmatter.links" :key="i.url" id="card-link">
         <a :href="i.url" target="_blank" class="flex p-2 h-full">
