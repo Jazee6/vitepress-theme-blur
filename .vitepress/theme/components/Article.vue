@@ -1,17 +1,20 @@
 <script setup>
 import {useData} from 'vitepress'
 import {formDate} from "../utils/utils.ts";
+import {onMounted} from "vue";
 
 const {frontmatter, page, theme} = useData()
 
-window.onscroll = () => {
-  const backToTopButton = document.getElementById("back-to-top-button");
-  if (document.documentElement.scrollTop > 100) {
-    backToTopButton.style.visibility = "visible";
-  } else {
-    backToTopButton.style.visibility = "hidden";
+onMounted(() => {
+  window.onscroll = () => {
+    const backToTopButton = document.getElementById("back-to-top-button");
+    if (document.documentElement.scrollTop > 100) {
+      backToTopButton.style.visibility = "visible";
+    } else {
+      backToTopButton.style.visibility = "hidden";
+    }
   }
-}
+})
 
 const handleToTop = () => {
   window.scrollTo({
